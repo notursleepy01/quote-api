@@ -1,11 +1,11 @@
-version: 1
 services:
   - type: web
-    name: quote-api
+    name: quoteapi
     runtime: docker
-    port: 4887
+    dockerfilePath: ./Dockerfile
+    plan: free
     envVars:
       - key: TOKEN
-        value: "4887"
+        sync: false
       - key: NODE_ENV
         value: production
