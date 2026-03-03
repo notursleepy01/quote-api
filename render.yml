@@ -1,0 +1,12 @@
+version: 1
+services:
+  - type: web
+    name: quote-api
+    runtime: docker
+    port: 4887
+    envVars:
+      - key: TOKEN
+      - key: PORT
+        value: "4887"
+      - key: NODE_ENV
+        value: production
