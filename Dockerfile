@@ -30,8 +30,8 @@ RUN npm install --production
 # Copy all project files into the container
 COPY . .
 
-# Expose the API port (Render assigns PORT dynamically via env var)
-EXPOSE 10000
+# Expose the API port
+EXPOSE 8080
 
 # Default environment variables
 ENV NODE_ENV=production
